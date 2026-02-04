@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+migrations/
+.env
+db.sqlite3
+.DS_Store
+
+
+run_system.py
+*.csv
+
+# Ignore run_system file
+run_system.py 
+
+*.pkl
