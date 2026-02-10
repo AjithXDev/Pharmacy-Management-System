@@ -49,6 +49,9 @@ def auto_finish_prescriptions(pharmacy):
 
             p.status = "DONE"
             p.assigned_staff = None
+
+            p.start_time = None
+            p.end_time = None
             p.save()
 
             if staff:

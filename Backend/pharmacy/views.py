@@ -17,6 +17,7 @@ def pharmacy_display(request, pharmacy_id):
         return Response({"error": "Invalid pharmacy"}, status=404)
 
     auto_finish_prescriptions(pharmacy)
+    assign_prescription(pharmacy)
 
     preparing = Prescription.objects.filter(
         pharmacy=pharmacy,
